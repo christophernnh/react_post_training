@@ -1,0 +1,50 @@
+.container {
+    background-color: black;
+    color: white;
+    padding: 1 rem;
+}
+
+.title {
+    font-size: 2vw;
+    margin-bottom: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.active {
+    background-color: greenyellow;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
