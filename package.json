@@ -2,7 +2,7 @@
   "name": "assignment_lc096",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://christophernnh.github.io/christophernnh.github.io",
+  "homepage": "http://christophernnh.github.io/react_post_training",
   "dependencies": {
     "@apollo/client": "^3.7.12",
     "@testing-library/jest-dom": "^5.16.5",
