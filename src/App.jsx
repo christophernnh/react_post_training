@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
 import DisplayAll from './pages/DisplayAll';
 import Search from './pages/Search';
@@ -14,14 +14,14 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<DisplayAll/>}></Route>
           <Route path="/Search" element={<Search/>}></Route>
           <Route path="/CharacterDetail/:id" element={<GetDetails/>}></Route>
           <Route path="/Favorites" element={<Favorites/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ApolloProvider>
   );
 }
